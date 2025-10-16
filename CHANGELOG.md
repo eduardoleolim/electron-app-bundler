@@ -1,3 +1,36 @@
+## 5.0.0 (2025-10-16)
+
+* ci: update pipeline to use node 20 lts ([25ba30e](https://github.com/eduardoleolim/electron-esbuild/commit/25ba30e))
+* chore: update dependencies to use node 20 lts ([db64ced](https://github.com/eduardoleolim/electron-esbuild/commit/db64ced))
+
+
+
+## 4.0.0 (2025-04-07)
+
+* chore: 🎉 bump version to 4.0.0 ([9842a33](https://github.com/eduardoleolim/electron-esbuild/commit/9842a33))
+* chore: add astro example ([a8dc52d](https://github.com/eduardoleolim/electron-esbuild/commit/a8dc52d))
+* chore: add v3.4.3 to changelog ([b168a5c](https://github.com/eduardoleolim/electron-esbuild/commit/b168a5c))
+* chore: set main entry point in vite example ([3a19538](https://github.com/eduardoleolim/electron-esbuild/commit/3a19538))
+* chore: update commander dependency to 13.1.0 ([021e2ac](https://github.com/eduardoleolim/electron-esbuild/commit/021e2ac))
+* chore: update dev dependencies ([fdbd5f6](https://github.com/eduardoleolim/electron-esbuild/commit/fdbd5f6))
+* chore: update dev dependencies of basic examples ([9403f90](https://github.com/eduardoleolim/electron-esbuild/commit/9403f90))
+* chore: update example with svelte ([4a8e0c7](https://github.com/eduardoleolim/electron-esbuild/commit/4a8e0c7))
+* chore: update keywords ([6e8e784](https://github.com/eduardoleolim/electron-esbuild/commit/6e8e784))
+* chore: update README ([6ad6f1d](https://github.com/eduardoleolim/electron-esbuild/commit/6ad6f1d))
+* chore: update README of tailwind example ([2aab513](https://github.com/eduardoleolim/electron-esbuild/commit/2aab513))
+* chore: update tailwind example to use v4 ([6dee0a1](https://github.com/eduardoleolim/electron-esbuild/commit/6dee0a1))
+* chore: update vite example with tailwind 4 ([ba5b1cd](https://github.com/eduardoleolim/electron-esbuild/commit/ba5b1cd))
+* fix: replace actual output extension when css filename is calculated ([e6a9f2e](https://github.com/eduardoleolim/electron-esbuild/commit/e6a9f2e))
+* fix(builder-vite): don't optimize excluded libraries ([9d888bc](https://github.com/eduardoleolim/electron-esbuild/commit/9d888bc))
+* feat: add support to build the renderer process with astro ([af56094](https://github.com/eduardoleolim/electron-esbuild/commit/af56094))
+* update dev dependencies of react example ([7874813](https://github.com/eduardoleolim/electron-esbuild/commit/7874813))
+
+
+### BREAKING CHANGE
+
+* add support to build the renderer process with astro
+
+
 ## <small>3.4.3 (2025-01-28)</small>
 
 * chore: :tada: bump version to 3.4.3 ([488a3ed](https://github.com/eduardoleolim/electron-esbuild/commit/488a3ed))
