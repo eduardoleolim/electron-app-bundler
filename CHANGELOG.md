@@ -1,7 +1,15 @@
+## <small>5.0.1 (2026-04-05)</small>
+
+* 5.0.1 ([f52cf74](https://github.com/eduardoleolim/electron-esbuild/commit/f52cf74))
+* deps: update dependencies with vulnerabilities ([d3ddc11](https://github.com/eduardoleolim/electron-esbuild/commit/d3ddc11))
+
+
+
 ## 5.0.0 (2025-10-16)
 
-* ci: update pipeline to use node 20 lts ([25ba30e](https://github.com/eduardoleolim/electron-esbuild/commit/25ba30e))
+* chore: bump version to 5.0.0 ([9d491da](https://github.com/eduardoleolim/electron-esbuild/commit/9d491da))
 * chore: update dependencies to use node 20 lts ([db64ced](https://github.com/eduardoleolim/electron-esbuild/commit/db64ced))
+* ci: update pipeline to use node 20 lts ([25ba30e](https://github.com/eduardoleolim/electron-esbuild/commit/25ba30e))
 
 
 
