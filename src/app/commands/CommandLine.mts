@@ -188,12 +188,15 @@ export class CommandLine {
   }
 
   private prepareConfigPath(config: string | undefined): string {
-    const jsonConfig = 'electron-esbuild.configon';
-    const yamlConfig = 'electron-esbuild.config.yaml';
-    let pathConfig: string;
+    const defaultConfigPaths = [
+      './electron-app-bundler.config.json',
+      './electron-app-bundler.config.yaml',
+      './electron-esbuild.config.json',
+      './electron-esbuild.config.yaml'
+    ];
 
     if (config) {
-      pathConfig = path.resolve(process.cwd(), config);
+      const pathConfig = path.resolve(process.cwd(), config);
 
       if (!fs.existsSync(pathConfig)) {
         throw new Error('Config file not found');
@@ -202,16 +205,14 @@ export class CommandLine {
       return pathConfig;
     }
 
-    pathConfig = path.resolve(process.cwd(), yamlConfig);
+    for (const defaultPath of defaultConfigPaths) {
+      const pathConfig = path.resolve(process.cwd(), defaultPath);
 
-    if (fs.existsSync(path.resolve(process.cwd(), yamlConfig))) {
-      this.logger.info('CLI', 'Using default config file: electron-esbuild.config.yaml');
-      return pathConfig;
-    }
+      if (fs.existsSync(path.resolve(process.cwd(), defaultPath))) {
+        this.logger.info('CLI', `'Using default config file: ${defaultPath}`);
 
-    if (fs.existsSync(path.resolve(process.cwd(), jsonConfig))) {
-      this.logger.info('CLI', 'Using default config file: electron-esbuild.configon');
-      return path.resolve(process.cwd(), jsonConfig);
+        return pathConfig;
+      }
     }
 
     throw new Error('Config file not found');
