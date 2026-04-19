@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/electron-esbuild.iml" filepath="$PROJECT_DIR$/.idea/electron-esbuild.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/electron-app-bundler.iml" filepath="$PROJECT_DIR$/.idea/electron-app-bundler.iml" />
     </modules>
   </component>
 </project>

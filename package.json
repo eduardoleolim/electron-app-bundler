@@ -1,6 +1,6 @@
 {
-  "name": "@eduardoleolim/electron-esbuild",
-  "version": "5.0.1",
+  "name": "electron-app-bundler",
+  "version": "6.0.0",
   "description": "Use esbuild with electron",
   "type": "module",
   "main": "dist/app/index.mjs",
@@ -37,14 +37,14 @@
     "node": ">=20"
   },
   "bin": {
-    "electron-esbuild": "dist/app/index.mjs"
+    "electron-app-bundler": "dist/app/index.mjs"
   },
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduardoleolim/electron-esbuild.git"
+    "url": "git+https://github.com/eduardoleolim/electron-app-bundler.git"
   },
   "keywords": [
     "esbuild",
@@ -60,9 +60,9 @@
   "author": "eduardoleolim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eduardoleolim/electron-esbuild/issues"
+    "url": "https://github.com/eduardoleolim/electron-app-bundler/issues"
   },
-  "homepage": "https://github.com/eduardoleolim/electron-esbuild#readme",
+  "homepage": "https://github.com/eduardoleolim/electron-app-bundler#readme",
   "dependencies": {
     "chalk": "5.6.2",
     "chokidar": "4.0.3",

@@ -62,7 +62,7 @@ export class CommandLine {
 
   private loadCommands(): void {
     this.program
-      .name('electron-esbuild')
+      .name('electron-app-bundler')
       .description('CLI for building Electron apps with esbuild')
       .version(this.packageJson.version);
     const commandDevelopment = this.program.command('dev');

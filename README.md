@@ -1,18 +1,18 @@
 <h1 align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Electron_Software_Framework_Logo.svg" height="35" alt="electron logo">
-  electron-esbuild
+  electron-app-bundler
   <img src="https://raw.githubusercontent.com/evanw/esbuild/a846a60af6bf679e158e486b9da82dcf270fc613/images/logo.svg" height="35" alt="esbuild logo">
 </h1>
 
 <p align="center">
-    <a href="https://github.com/eduardoleolim/electron-esbuild/actions/workflows/publish.yaml"><img src="https://github.com/eduardoleolim/electron-esbuild/actions/workflows/publish.yaml/badge.svg" alt="Build status"/></a>
-    <a href="https://www.npmjs.com/package/@eduardoleolim/electron-esbuild"><img src="https://img.shields.io/npm/v/@eduardoleolim/electron-esbuild" alt="NPM version"/></a>
-    <a href="https://www.npmjs.com/package/@eduardoleolim/electron-esbuild"><img src="https://img.shields.io/npm/dt/@eduardoleolim/electron-esbuild" alt="NPM downloads"/></a>
-    <a href="https://github.com/eduardoleolim/electron-esbuild/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/@eduardoleolim/electron-esbuild" alt="License"/></a>
+    <a href="https://github.com/eduardoleolim/electron-app-bundler/actions/workflows/publish.yaml"><img src="https://github.com/eduardoleolim/electron-app-bundler/actions/workflows/publish.yaml/badge.svg" alt="Build status"/></a>
+    <a href="https://www.npmjs.com/package/electron-app-bundler"><img src="https://img.shields.io/npm/v/electron-app-bundler" alt="NPM version"/></a>
+    <a href="https://www.npmjs.com/package/electron-app-bundler"><img src="https://img.shields.io/npm/dt/electron-app-bundler" alt="NPM downloads"/></a>
+    <a href="https://github.com/eduardoleolim/electron-app-bundler/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/electron-app-bundler" alt="License"/></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/eduardoleolim/electron-esbuild/stargazers">Stars are welcome 😊</a>
+  <a href="https://github.com/eduardoleolim/electron-app-bundler/stargazers">Stars are welcome 😊</a>
 </p>
 
 A package to build your electron app with esbuild.
@@ -30,13 +30,13 @@ A package to build your electron app with esbuild.
 ## 📥 Installation
 
 ```bash
-npm install @eduardoleolim/electron-esbuild --save-dev
+npm install electron-app-bundler --save-dev
 ```
 
 ## 🖥️ Usage
 
 ```bash
-npx electron-esbuild <command> [options]
+npx electron-app-bundler <command> [options]
 ```
 
 ### ⌨️ Commands
@@ -52,7 +52,7 @@ Options:
 - `--astro` Use astro for the renderer process. Default: `false`
 
 ```bash
-npx electron-esbuild build [--config electron-esbuild.config.json] [--vite] [--astro]
+npx electron-app-bundler build [--config electron-app-bundler.config.json] [--vite] [--astro]
 ```
 
 #### 👨‍💻 dev
@@ -67,14 +67,14 @@ Options:
 - `--clean` Clean the output directory before building. Default: `false`
 
 ```bash
-npx electron-esbuild dev [--config electron-esbuild.config.json] [--vite] [--astro] [--clean]
+npx electron-app-bundler dev [--config electron-app-bundler.config.json] [--vite] [--astro] [--clean]
 ```
 
 ## ⚙️ Configuration
 
-You can configure the build with a json or yaml file in the root of your project. It looking for a config file named `electron-esbuild.config.json` or `electron-esbuild.config.yaml`.
+You can configure the build with a json or yaml file in the root of your project. It looking for a config file named `electron-app-bundler.config.json` or `electron-app-bundler.config.yaml`.
 
-Electron-esbuild will look for the config file in the following order:
+electron-app-bundler will look for the config file in the following order:
 
 - The path specified in the `--config` option
 - The default yaml file
@@ -240,16 +240,16 @@ The `to` property also can be and object with the following properties:
 
 ## 😊 Thanks
 
-Inspired by [electron-esbuild](https://github.com/Kiyozz/electron-esbuild) of [Kiyozz](https://github.com/Kiyozz).
+Inspired by [electron-app-bundler](https://github.com/Kiyozz/electron-app-bundler) of [Kiyozz](https://github.com/Kiyozz).
 
 ## 📄 Examples
 
-There are some examples in the [examples](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples) directory.
+There are some examples in the [examples](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples) directory.
 
-- *[basic-js](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/basic-js)* - A basic example with javascript using the basic configuration of electron-esbuild.
-- *[basic-ts](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/basic-ts)* - A basic example with typescript using the basic configuration of electron-esbuild.
-- *[react-ts](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/react-ts)* - An example with react and typescript using the basic configuration of electron-esbuild with esbuild loaders for renderer process.
-- *[svelte-ts](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/svelte-ts)* - An example with svelte and typescript using the basic configuration of electron-esbuild. Also, it shows how to use an esbuild config file for the renderer process.
-- *[tailwind-ts](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/tailwind-ts)* - An example with tailwind, react and typescript.
-- *[vite-ts](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/vite-ts)* - An example with vite, tailwind, react and typescript.
-- *[astro](https://github.com/eduardoleolim/electron-esbuild/tree/main/examples/astro)* - An example with astro
+- *[basic-js](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/basic-js)* - A basic example with javascript using the basic configuration of electron-app-bundler.
+- *[basic-ts](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/basic-ts)* - A basic example with typescript using the basic configuration of electron-app-bundler.
+- *[react-ts](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/react-ts)* - An example with react and typescript using the basic configuration of electron-app-bundler with esbuild loaders for renderer process.
+- *[svelte-ts](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/svelte-ts)* - An example with svelte and typescript using the basic configuration of electron-app-bundler. Also, it shows how to use an esbuild config file for the renderer process.
+- *[tailwind-ts](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/tailwind-ts)* - An example with tailwind, react and typescript.
+- *[vite-ts](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/vite-ts)* - An example with vite, tailwind, react and typescript.
+- *[astro](https://github.com/eduardoleolim/electron-app-bundler/tree/main/examples/astro)* - An example with astro
