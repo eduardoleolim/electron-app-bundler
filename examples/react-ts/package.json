@@ -1,25 +1,25 @@
 {
   "name": "react-ts",
   "version": "1.0.0",
-  "description": "Basic example of using electron-esbuild with React and TypeScript",
+  "description": "Basic example of using electron-app-bundler with React and TypeScript",
   "main": "./dist/main/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-esbuild build",
-    "dev": "electron-esbuild dev --clean"
+    "build": "electron-app-bundler build",
+    "dev": "electron-app-bundler dev --clean"
   },
   "keywords": [
     "electron",
     "react",
     "esbuild",
-    "electron-esbuild",
+    "electron-app-bundler",
     "typescript",
     "example"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@eduardoleolim/electron-esbuild": "../../",
+    "electron-app-bundler": "../../",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
     "electron": "35.1.3",

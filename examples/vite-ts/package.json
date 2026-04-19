@@ -5,8 +5,8 @@
   "main": "dist/main/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-esbuild build --vite",
-    "dev": "electron-esbuild dev --clean --vite"
+    "build": "electron-app-bundler build --vite",
+    "dev": "electron-app-bundler dev --clean --vite"
   },
   "keywords": [
     "electron",
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@eduardoleolim/electron-esbuild": "../../",
+    "electron-app-bundler": "../../",
     "@tailwindcss/vite": "4.1.1",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",

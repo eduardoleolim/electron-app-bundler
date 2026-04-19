@@ -1,6 +1,6 @@
 # Basic example with TypeScript
 
-This is a basic example of how to use electron-esbuild with React and TypeScript.
+This is a basic example of how to use electron-app-bundler with React and TypeScript.
 
 ## 🚀 Getting Started
 
@@ -24,7 +24,7 @@ npm run dev
 
 ## 📄 Configuration
 
-The configuration file is `electron-esbuild.config.yaml` in the root of the project.
+The configuration file is `electron-app-bundler.config.yaml` in the root of the project.
 
 ```yaml
 output: dist

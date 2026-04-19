@@ -1,6 +1,6 @@
 # Svelte with TypeScript Example
 
-This is a basic example of how to use electron-esbuild with TypeScript and Svelte.
+This is a basic example of how to use electron-app-bundler with TypeScript and Svelte.
 
 ## 🚀 Getting Started
 
@@ -24,7 +24,7 @@ npm run dev
 
 ## 📄 Configuration
 
-The configuration file is `electron-esbuild.config.yaml` in the root of the project.
+The configuration file is `electron-app-bundler.config.yaml` in the root of the project.
 
 ```yaml
 output: dist
@@ -40,7 +40,7 @@ renderers:
   output:
     directory: renderer
     filename: renderer.js
-  esbuild: electron-esbuild.renderer.mjs
+  esbuild: electron-app-bundler.renderer.mjs
 ```
 
 Each section of the configuration file is explained below.
@@ -65,7 +65,7 @@ Each section of the configuration file is explained below.
 
   ### 📦 esbuild config
 
-  The file `electron-esbuild.renderer.mjs` is the esbuild config file for the renderer process. For allowing svelte to be used with esbuild, the `esbuild-svelte` package is used.
+  The file `electron-app-bundler.renderer.mjs` is the esbuild config file for the renderer process. For allowing svelte to be used with esbuild, the `esbuild-svelte` package is used.
 
   Install the `esbuild-svelte` package
 

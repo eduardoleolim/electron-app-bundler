@@ -7,7 +7,7 @@ main:
 renderers:
   entry: src/renderer/index.tsx
   html: src/renderer/index.html
-  base: electron-esbuild.renderer.config.js
+  base: electron-app-bundler.renderer.config.js
   devPort: 8080
   output:
     directory: renderer

@@ -1,24 +1,24 @@
 {
   "name": "basic-example-js",
   "version": "1.0.0",
-  "description": "Basic example of using electron-esbuild",
+  "description": "Basic example of using electron-app-bundler",
   "main": "./dist/main/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-esbuild build",
-    "dev": "electron-esbuild dev --clean"
+    "build": "electron-app-bundler build",
+    "dev": "electron-app-bundler dev --clean"
   },
   "keywords": [
     "electron",
     "esbuild",
-    "electron-esbuild",
+    "electron-app-bundler",
     "javascript",
     "example"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@eduardoleolim/electron-esbuild": "../../",
+    "electron-app-bundler": "../../",
     "electron": "35.1.3",
     "esbuild": "0.25.2"
   }

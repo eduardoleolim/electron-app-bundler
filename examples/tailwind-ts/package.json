@@ -5,22 +5,22 @@
   "main": "./dist/main/main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-esbuild build",
-    "dev": "electron-esbuild dev --clean"
+    "build": "electron-app-bundler build",
+    "dev": "electron-app-bundler dev --clean"
   },
   "keywords": [
     "electron",
     "react",
     "tailwind",
     "esbuild",
-    "electron-esbuild",
+    "electron-app-bundler",
     "typescript",
     "example"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@eduardoleolim/electron-esbuild": "../../",
+    "electron-app-bundler": "../../",
     "@tailwindcss/postcss": "4.1.1",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",

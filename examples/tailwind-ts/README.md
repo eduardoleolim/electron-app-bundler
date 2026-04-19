@@ -1,6 +1,6 @@
 # Basic example with TailwindCSS, React and Typescript
 
-This is a basic example of how to use electron-esbuild with TailwindCSS. React and TypeScript.
+This is a basic example of how to use electron-app-bundler with TailwindCSS. React and TypeScript.
 
 ## 🚀 Getting Started
 
@@ -24,7 +24,7 @@ npm run dev
 
 ## 📄 Configuration
 
-The configuration file is `electron-esbuild.config.yaml` in the root of the project.
+The configuration file is `electron-app-bundler.config.yaml` in the root of the project.
 
 ```yaml
 output: dist
@@ -36,7 +36,7 @@ main:
 renderers:
   entry: src/renderer/index.tsx
   html: src/renderer/index.html
-  base: electron-esbuild.renderer.config.js
+  base: electron-app-bundler.renderer.config.js
   devPort: 8080
   output:
     directory: renderer
@@ -88,7 +88,7 @@ To integrate TailwindCSS v4 with esbuild, follow these steps to configure the re
   };
    ```
 
-3. **`electron-esbuild.renderer.config.js`**: Configure esbuild to use PostCSS during the build process. The `esbuild-postcss` plugin will automatically load the PostCSS configuration.
+3. **`electron-app-bundler.renderer.config.js`**: Configure esbuild to use PostCSS during the build process. The `esbuild-postcss` plugin will automatically load the PostCSS configuration.
 
    ```js
    const postcss = require("esbuild-postcss")
