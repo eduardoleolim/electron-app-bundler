@@ -240,7 +240,7 @@ The `to` property also can be and object with the following properties:
 
 ## 😊 Thanks
 
-Inspired by [electron-esbuild](https://github.com/Kiyozz/electron-esbuild) of [Kiyozz](https://github.com/Kiyozz).
+Inspired by [electron-esbuild](https://www.npmjs.com/package/electron-esbuild) of [Kiyozz](https://github.com/Kiyozz).
 
 ## 📄 Examples
 
