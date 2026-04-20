@@ -82,7 +82,7 @@ export class ViteRendererProcessBuilder implements RendererProcessBuilderService
   public async loadRendererViteOptions(output: string, config: RendererConfig): Promise<InlineConfig> {
     const entryPoint = path.resolve(process.cwd(), config.htmlEntryPoint);
     const outputDirectory = path.resolve(output, config.output.directory);
-    const external = ['electron', ...config.excludedLibraries];
+    const external = [...config.excludedLibraries];
 
     return {
       configFile:
@@ -104,7 +104,7 @@ export class ViteRendererProcessBuilder implements RendererProcessBuilderService
           external: external,
           output: {
             assetFileNames: (assetInfo) => {
-              if (assetInfo.name?.endsWith('.css')) {
+              if (assetInfo.names[0]?.endsWith('.css')) {
                 return config.output.filename.replace('.js', '.css');
               }
               return '[name][extname]';

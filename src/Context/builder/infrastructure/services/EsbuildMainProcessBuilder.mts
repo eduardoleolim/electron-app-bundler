@@ -112,7 +112,7 @@ export class EsbuildMainProcessBuilder implements MainProcessBuilderService {
 
   public async loadMainEsbuildOptions(output: string, config: MainConfig): Promise<BuildOptions> {
     const outputFileDirectory = path.resolve(process.cwd(), output, config.output.directory, config.output.filename);
-    const external = ['electron', ...config.excludedLibraries];
+    const external = [...config.excludedLibraries];
     const loaders: LoadersInput = {};
 
     for (const loader of config.loaderConfigs) {

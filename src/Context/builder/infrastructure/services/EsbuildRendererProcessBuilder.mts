@@ -123,7 +123,7 @@ export class EsbuildRendererProcessBuilder implements RendererProcessBuilderServ
 
   public async loadRendererEsbuildOptions(output: string, config: RendererConfig): Promise<BuildOptions> {
     const outputFileDirectory = path.resolve(process.cwd(), output, config.output.directory, config.output.filename);
-    const external = ['electron', ...config.excludedLibraries];
+    const external = [...config.excludedLibraries];
     const loaders: LoadersInput = {};
 
     for (const loader of config.loaderConfigs) {

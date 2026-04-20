@@ -71,7 +71,7 @@ export class AstroRendererProcessBuilder implements RendererProcessBuilderServic
   public async loadRendererAstroOptions(output: string, config: RendererConfig): Promise<AstroInlineConfig> {
     const entryPoint = path.resolve(process.cwd(), config.entryPoint);
     const outputDirectory = path.resolve(output, config.output.directory);
-    const external = ['electron', ...config.excludedLibraries];
+    const external = [...config.excludedLibraries];
 
     return {
       output: 'static',
