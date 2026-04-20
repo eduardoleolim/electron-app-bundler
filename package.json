@@ -1,6 +1,6 @@
 {
   "name": "electron-app-bundler",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Use esbuild with electron",
   "type": "module",
   "main": "dist/app/index.mjs",

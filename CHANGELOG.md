@@ -1,6 +1,15 @@
+## <small>6.0.1 (2026-04-20)</small>
+
+* 6.0.1 ([b175724](https://github.com/eduardoleolim/electron-app-bundler/commit/b175724))
+* deps: update vulnerable dependencies ([03cec88](https://github.com/eduardoleolim/electron-app-bundler/commit/03cec88))
+* chore: fix typo ([65d8ab5](https://github.com/eduardoleolim/electron-app-bundler/commit/65d8ab5))
+
+
+
 ## 6.0.0 (2026-04-19)
 
 * chore: bump version to 5.0.1 ([e15cc5a](https://github.com/eduardoleolim/electron-app-bundler/commit/e15cc5a))
+* chore: update changelog for 6.0.0 ([8a7f442](https://github.com/eduardoleolim/electron-app-bundler/commit/8a7f442))
 * chore: update examples ([38896b8](https://github.com/eduardoleolim/electron-app-bundler/commit/38896b8))
 * feat: add support for new default config files ([59063b8](https://github.com/eduardoleolim/electron-app-bundler/commit/59063b8))
 * feat!: rename package as `electron-app-bundler` ([8c43a41](https://github.com/eduardoleolim/electron-app-bundler/commit/8c43a41))
