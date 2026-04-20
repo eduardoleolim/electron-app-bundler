@@ -240,7 +240,7 @@ The `to` property also can be and object with the following properties:
 
 ## 😊 Thanks
 
-Inspired by [electron-app-bundler](https://github.com/Kiyozz/electron-app-bundler) of [Kiyozz](https://github.com/Kiyozz).
+Inspired by [electron-esbuild](https://github.com/Kiyozz/electron-esbuild) of [Kiyozz](https://github.com/Kiyozz).
 
 ## 📄 Examples
 
