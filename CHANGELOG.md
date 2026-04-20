@@ -1,10 +1,10 @@
 ## <small>6.0.1 (2026-04-20)</small>
 
-* 6.0.1 ([b175724](https://github.com/eduardoleolim/electron-app-bundler/commit/b175724))
-* deps: update vulnerable dependencies ([03cec88](https://github.com/eduardoleolim/electron-app-bundler/commit/03cec88))
+* feat: exclude node modules by default ([7e7ae56](https://github.com/eduardoleolim/electron-app-bundler/commit/7e7ae56))
+* docs: update README ([a98ae2d](https://github.com/eduardoleolim/electron-app-bundler/commit/a98ae2d))
+* chore: bump version to 6.0.1 ([7aed08e](https://github.com/eduardoleolim/electron-app-bundler/commit/7aed08e))
 * chore: fix typo ([65d8ab5](https://github.com/eduardoleolim/electron-app-bundler/commit/65d8ab5))
-
-
+* deps: update vulnerable dependencies ([03cec88](https://github.com/eduardoleolim/electron-app-bundler/commit/03cec88))
 
 ## 6.0.0 (2026-04-19)
 
@@ -15,15 +15,11 @@
 * feat!: rename package as `electron-app-bundler` ([8c43a41](https://github.com/eduardoleolim/electron-app-bundler/commit/8c43a41))
 * deps: update dependencies with vulnerabilities ([d3ddc11](https://github.com/eduardoleolim/electron-app-bundler/commit/d3ddc11))
 
-
-
 ## 5.0.0 (2025-10-16)
 
 * chore: bump version to 5.0.0 ([9d491da](https://github.com/eduardoleolim/electron-app-bundler/commit/9d491da))
 * chore: update dependencies to use node 20 lts ([db64ced](https://github.com/eduardoleolim/electron-app-bundler/commit/db64ced))
 * ci: update pipeline to use node 20 lts ([25ba30e](https://github.com/eduardoleolim/electron-app-bundler/commit/25ba30e))
-
-
 
 ## 4.0.0 (2025-04-07)
 
@@ -45,11 +41,9 @@
 * feat: add support to build the renderer process with astro ([af56094](https://github.com/eduardoleolim/electron-app-bundler/commit/af56094))
 * update dev dependencies of react example ([7874813](https://github.com/eduardoleolim/electron-app-bundler/commit/7874813))
 
-
 ### BREAKING CHANGE
 
 * add support to build the renderer process with astro
-
 
 ## <small>3.4.3 (2025-01-28)</small>
 
@@ -58,15 +52,11 @@
 * chore: clear package.json with custom script ([10fe543](https://github.com/eduardoleolim/electron-app-bundler/commit/10fe543))
 * ci: clean 'package.json' before publishing ([6728156](https://github.com/eduardoleolim/electron-app-bundler/commit/6728156))
 
-
-
 ## <small>3.4.2 (2025-01-28)</small>
 
 * chore : bump version to 3.4.2 ([e5a8ec6](https://github.com/eduardoleolim/electron-app-bundler/commit/e5a8ec6))
 * build: clean package.json before publishing ([4b8aec2](https://github.com/eduardoleolim/electron-app-bundler/commit/4b8aec2))
 * chore: add 3.4.1 to changelog ([7f3d81a](https://github.com/eduardoleolim/electron-app-bundler/commit/7f3d81a))
-
-
 
 ## <small>3.4.1 (2025-01-27)</small>
 
@@ -103,8 +93,6 @@
 * feat(config-parser): add InMemoryConfigParser for config file handling ([ee8da41](https://github.com/eduardoleolim/electron-app-bundler/commit/ee8da41))
 * perf(builder): start vite server faster ([c049eed](https://github.com/eduardoleolim/electron-app-bundler/commit/c049eed))
 
-
-
 ## 3.4.0 (2024-10-27)
 
 * chore: add example using TailwindCSS ([052a57e](https://github.com/eduardoleolim/electron-app-bundler/commit/052a57e))
@@ -115,11 +103,9 @@
 * refactor(config): get esbuild or vite config's path from base property ([3ce217b](https://github.com/eduardoleolim/electron-app-bundler/commit/3ce217b))
 * docs: rename property "baseConfigEntryPoint" according implementation of BaseConfig ([22171e7](https://github.com/eduardoleolim/electron-app-bundler/commit/22171e7))
 
-
 ### BREAKING CHANGE
 
 * The path of esbuild or vite config is obtained from base property instead of esbuild property.
-
 
 ## 3.3.0 (2024-10-04)
 
@@ -133,22 +119,16 @@
 * fix: cast FSWatcher ([b4052b5](https://github.com/eduardoleolim/electron-app-bundler/commit/b4052b5))
 * fix: import missing interface ([7a9bcf0](https://github.com/eduardoleolim/electron-app-bundler/commit/7a9bcf0))
 
-
-
 ## 3.2.0 (2024-08-16)
 
 * release: v3.2.0 ([daa56c5](https://github.com/eduardoleolim/electron-app-bundler/commit/daa56c5))
 * fix(main-dispatcher): finish the tool process after finish all main processes ([cc88306](https://github.com/eduardoleolim/electron-app-bundler/commit/cc88306))
 * chore: update examples' libraries ([8d60e7d](https://github.com/eduardoleolim/electron-app-bundler/commit/8d60e7d))
 
-
-
 ## 3.1.0 (2024-08-15)
 
 * release: v3.1.0 ([9b1be04](https://github.com/eduardoleolim/electron-app-bundler/commit/9b1be04))
 * chore: update libraries ([1305a1a](https://github.com/eduardoleolim/electron-app-bundler/commit/1305a1a))
-
-
 
 ## 3.0.0 (2024-04-03)
 
@@ -164,11 +144,9 @@
 * docs: add electron arguments for development mode ([cdaf866](https://github.com/eduardoleolim/electron-app-bundler/commit/cdaf866))
 * docs: include flag of vite in config parser ([f70ac22](https://github.com/eduardoleolim/electron-app-bundler/commit/f70ac22))
 
-
 ### BREAKING-CHANGE
 
 * Add support for use vite
-
 
 ## 2.8.0 (2024-03-22)
 
@@ -179,11 +157,9 @@
 * refactor (constructor): reload the renderer process when the preload source changes. ([58c6a70](https://github.com/eduardoleolim/electron-app-bundler/commit/58c6a70))
 * docs: add direct dependency of PreloadConfig on ElectronConfig ([8640024](https://github.com/eduardoleolim/electron-app-bundler/commit/8640024))
 
-
 ### BREAKING CHANGE
 
 * Reload renderer proncess when reload source change in development mode
-
 
 ## <small>2.7.5 (2024-03-14)</small>
 
@@ -191,8 +167,6 @@
 * fix: finish the building task correctly ([f1b955e](https://github.com/eduardoleolim/electron-app-bundler/commit/f1b955e))
 * chore: rename main process dispatcher ([8659a81](https://github.com/eduardoleolim/electron-app-bundler/commit/8659a81))
 * docs: update electron-esbuild in examples ([638d248](https://github.com/eduardoleolim/electron-app-bundler/commit/638d248))
-
-
 
 ## <small>2.7.4 (2024-03-12)</small>
 
@@ -203,15 +177,11 @@
 * refactor(builder): move main process killer to main process dispatcher ([b96b0d2](https://github.com/eduardoleolim/electron-app-bundler/commit/b96b0d2))
 * refactor(builder): simplify esbuild-options object ([eddf683](https://github.com/eduardoleolim/electron-app-bundler/commit/eddf683))
 
-
-
 ## <small>2.7.3 (2024-03-08)</small>
 
 * release: v2.7.3 ([fee0881](https://github.com/eduardoleolim/electron-app-bundler/commit/fee0881))
 * fix(develop): maintain fast reload functionality for the renderer server ([166495e](https://github.com/eduardoleolim/electron-app-bundler/commit/166495e))
 * feat(develop): implement queue for proper termination of the main process ([ed529af](https://github.com/eduardoleolim/electron-app-bundler/commit/ed529af))
-
-
 
 ## <small>2.7.2 (2024-03-07)</small>
 
@@ -224,16 +194,12 @@
 * refactor(builder): build preloads in build method ([cbf30ae](https://github.com/eduardoleolim/electron-app-bundler/commit/cbf30ae))
 * refactor(develop): copy resources before call develop service ([a2a143d](https://github.com/eduardoleolim/electron-app-bundler/commit/a2a143d))
 
-
-
 ## <small>2.7.1 (2024-03-05)</small>
 
 * release: v2.7.1 ([3f299a9](https://github.com/eduardoleolim/electron-app-bundler/commit/3f299a9))
 * fix(builder): set browser platform for renderer process ([82921ab](https://github.com/eduardoleolim/electron-app-bundler/commit/82921ab))
 * chore: rename esbuild-options variable ([488aabb](https://github.com/eduardoleolim/electron-app-bundler/commit/488aabb))
 * feat(develop): implement new electron process starter ([d95aa42](https://github.com/eduardoleolim/electron-app-bundler/commit/d95aa42))
-
-
 
 ## 2.7.0 (2024-03-03)
 
@@ -242,14 +208,10 @@
 * feat(develop): sort builder in develop task ([0f420fe](https://github.com/eduardoleolim/electron-app-bundler/commit/0f420fe))
 * feat(renderer): handle exceptions in first build in development task ([e2fb33c](https://github.com/eduardoleolim/electron-app-bundler/commit/e2fb33c))
 
-
-
 ## 2.6.0 (2024-03-02)
 
 * release: v2.6.0 ([951202a](https://github.com/eduardoleolim/electron-app-bundler/commit/951202a))
 * feat(builder): copy resources ([b0e3d31](https://github.com/eduardoleolim/electron-app-bundler/commit/b0e3d31))
-
-
 
 ## <small>2.5.2 (2024-03-02)</small>
 
@@ -257,14 +219,10 @@
 * feat(builder): handle errors in builders ([d67fc33](https://github.com/eduardoleolim/electron-app-bundler/commit/d67fc33))
 * fix(config): load esbuild entry from config file ([5955490](https://github.com/eduardoleolim/electron-app-bundler/commit/5955490))
 
-
-
 ## <small>2.5.1 (2024-03-02)</small>
 
 * release: v2.5.1 ([06b1c18](https://github.com/eduardoleolim/electron-app-bundler/commit/06b1c18))
 * fix: bin path fixed ([b337961](https://github.com/eduardoleolim/electron-app-bundler/commit/b337961))
-
-
 
 ## 2.5.0 (2024-03-02)
 
@@ -302,21 +260,15 @@
 * ci: fix conditions for pipeline execution ([b111dbd](https://github.com/eduardoleolim/electron-app-bundler/commit/b111dbd))
 * chore: rename app folder ([bb773f7](https://github.com/eduardoleolim/electron-app-bundler/commit/bb773f7))
 
-
-
 ## 2.4.0 (2023-09-26)
 
 * release: v2.4.0 ([999f18e](https://github.com/eduardoleolim/electron-app-bundler/commit/999f18e))
 * chore(esbuild): support for esbuild 0.19.x ([c5c8658](https://github.com/eduardoleolim/electron-app-bundler/commit/c5c8658))
 
-
-
 ## 2.3.0 (2023-07-30)
 
 * release: v2.3.0 ([660c336](https://github.com/eduardoleolim/electron-app-bundler/commit/660c336))
 * feat(preload): add reload option in preload config ([c3b1aeb](https://github.com/eduardoleolim/electron-app-bundler/commit/c3b1aeb))
-
-
 
 ## <small>2.2.1 (2023-07-29)</small>
 
@@ -324,15 +276,11 @@
 * fix(preload): include loader and external property in esbuild's preload config ([4e2c17a](https://github.com/eduardoleolim/electron-app-bundler/commit/4e2c17a))
 * chore: update CHANGELOG.md ([dd33985](https://github.com/eduardoleolim/electron-app-bundler/commit/dd33985))
 
-
-
 ## 2.2.0 (2023-07-29)
 
 * release: v2.2.0 ([38cb313](https://github.com/eduardoleolim/electron-app-bundler/commit/38cb313))
 * chore: update readme ([3f0e043](https://github.com/eduardoleolim/electron-app-bundler/commit/3f0e043))
 * feat(preload): add support for exclude and loaders options in preload config ([985cb6c](https://github.com/eduardoleolim/electron-app-bundler/commit/985cb6c))
-
-
 
 ## 2.1.0 (2023-07-26)
 
@@ -343,8 +291,6 @@
 * refactor: change output message of loading of plugins in renderer builder ([8bb704b](https://github.com/eduardoleolim/electron-app-bundler/commit/8bb704b))
 * feat(config): include esbuild plugins to main, renderer and preload config ([1118a6a](https://github.com/eduardoleolim/electron-app-bundler/commit/1118a6a))
 
-
-
 ## 2.0.0 (2023-07-23)
 
 * release: v2.0.0 ([05136fe](https://github.com/eduardoleolim/electron-app-bundler/commit/05136fe))
@@ -353,19 +299,15 @@
 * style: order imports ([fb6f974](https://github.com/eduardoleolim/electron-app-bundler/commit/fb6f974))
 * build: change to ES Module ([842ec64](https://github.com/eduardoleolim/electron-app-bundler/commit/842ec64))
 
-
 ### BREAKING CHANGE
 
 * Migration to ES Module
 Refs: c8cc138
 
-
 ## <small>1.8.1 (2023-07-23)</small>
 
 * release: v1.8.1 ([7d2e5bf](https://github.com/eduardoleolim/electron-app-bundler/commit/7d2e5bf))
 * fix: try next port ([e683c23](https://github.com/eduardoleolim/electron-app-bundler/commit/e683c23))
-
-
 
 ## 1.8.0 (2023-07-23)
 
@@ -373,15 +315,11 @@ Refs: c8cc138
 * fix: avoid using the same port in different esbuild and livereload servers ([25eaa29](https://github.com/eduardoleolim/electron-app-bundler/commit/25eaa29))
 * feat: asynchronous construction ([e9c11e9](https://github.com/eduardoleolim/electron-app-bundler/commit/e9c11e9))
 
-
-
 ## 1.7.0 (2023-07-23)
 
 * release: v1.7.0 ([fae87c4](https://github.com/eduardoleolim/electron-app-bundler/commit/fae87c4))
 * feat: console logger ([0af4e3d](https://github.com/eduardoleolim/electron-app-bundler/commit/0af4e3d))
 * feat: debounce server reload function ([a577d04](https://github.com/eduardoleolim/electron-app-bundler/commit/a577d04))
-
-
 
 ## 1.6.0 (2023-07-23)
 
@@ -389,22 +327,16 @@ Refs: c8cc138
 * revert: "refactor(esbuild-dev): remove unnecessary livereload server" ([52a569c](https://github.com/eduardoleolim/electron-app-bundler/commit/52a569c))
 * build: remove unused dependencies ([31c2882](https://github.com/eduardoleolim/electron-app-bundler/commit/31c2882))
 
-
-
 ## <small>1.5.1 (2023-07-23)</small>
 
 * release: v1.5.1 ([7623272](https://github.com/eduardoleolim/electron-app-bundler/commit/7623272))
 * fix(hot-reload): avoid remove link of css on reload ([87edd9e](https://github.com/eduardoleolim/electron-app-bundler/commit/87edd9e))
 * build(eslint): format script folder ([21ee27a](https://github.com/eduardoleolim/electron-app-bundler/commit/21ee27a))
 
-
-
 ## 1.5.0 (2023-07-23)
 
 * release: v1.5.0 ([323ef55](https://github.com/eduardoleolim/electron-app-bundler/commit/323ef55))
 * refactor(esbuild-dev): remove unnecessary livereload server ([4dbd146](https://github.com/eduardoleolim/electron-app-bundler/commit/4dbd146))
-
-
 
 ## 1.4.0 (2023-07-23)
 
@@ -418,8 +350,6 @@ Refs: c8cc138
 * refactor(config): rename static methods ([e69a3c4](https://github.com/eduardoleolim/electron-app-bundler/commit/e69a3c4))
 * test: update test of config ([5716a3f](https://github.com/eduardoleolim/electron-app-bundler/commit/5716a3f))
 
-
-
 ## 1.3.0 (2023-07-23)
 
 * release: v1.3.0 ([3bbac57](https://github.com/eduardoleolim/electron-app-bundler/commit/3bbac57))
@@ -427,22 +357,16 @@ Refs: c8cc138
 * feat: copy static files ([4fdd7b5](https://github.com/eduardoleolim/electron-app-bundler/commit/4fdd7b5))
 * refactor(preload): build inline sourceMap ([254bf66](https://github.com/eduardoleolim/electron-app-bundler/commit/254bf66))
 
-
-
 ## 1.2.0 (2023-07-23)
 
 * release: v1.2.0 ([29a2909](https://github.com/eduardoleolim/electron-app-bundler/commit/29a2909))
 * revert(environment): use process.env ([e2b1e05](https://github.com/eduardoleolim/electron-app-bundler/commit/e2b1e05))
 * feat(esbuild-dev): generate sourceMap ([f9f966d](https://github.com/eduardoleolim/electron-app-bundler/commit/f9f966d))
 
-
-
 ## <small>1.1.1 (2023-07-23)</small>
 
 * release: v1.1.1 ([011d518](https://github.com/eduardoleolim/electron-app-bundler/commit/011d518))
 * fix: replace process.env.NODE_ENV in bundle ([3a94c02](https://github.com/eduardoleolim/electron-app-bundler/commit/3a94c02))
-
-
 
 ## 1.1.0 (2023-07-23)
 
@@ -451,8 +375,6 @@ Refs: c8cc138
 * refactor(esbuild-dev): init sequentially dev-server of renderer process ([7b83fb3](https://github.com/eduardoleolim/electron-app-bundler/commit/7b83fb3))
 * ci: prevent npm publish if there is not a new release ([6d81fb4](https://github.com/eduardoleolim/electron-app-bundler/commit/6d81fb4))
 * fix(preload): exclude electron from esbuild config ([a6bf147](https://github.com/eduardoleolim/electron-app-bundler/commit/a6bf147))
-
-
 
 ## 1.0.0 (2023-07-23)
 
@@ -485,6 +407,3 @@ Refs: c8cc138
 * build: structure project with port-adapter pattern ([4f483e1](https://github.com/eduardoleolim/electron-app-bundler/commit/4f483e1))
 * build(pack): just include dist folder in package ([155623b](https://github.com/eduardoleolim/electron-app-bundler/commit/155623b))
 * project created ([482df9a](https://github.com/eduardoleolim/electron-app-bundler/commit/482df9a))
-
-
-
