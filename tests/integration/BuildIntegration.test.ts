@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import os from 'os';
 import * as path from 'path';
 
-const PROJECT_ROOT = '/home/eduardoleolim/projects/personal/electron-esbuild';
+const PROJECT_ROOT = process.cwd();
 
 describe('Build Integration', () => {
   let tempDir: string;
