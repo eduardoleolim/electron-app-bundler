@@ -45,20 +45,20 @@
     "astro"
   ],
   "author": "eduardoleolim",
-  "devDependencies": {
-     "@trivago/prettier-plugin-sort-imports": "5.2.2",
-    "@eslint/js": "9.18.0",
-    "@typescript-eslint/eslint-plugin": "8.19.1",
-    "@typescript-eslint/parser": "8.19.1",
-    "conventional-changelog": "^7.2.0",
-    "eslint": "9.37.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-prettier": "5.2.1",
-    "globals": "^17.6.0",
-    "husky": "9.1.7",
-    "lint-staged": "16.2.4",
-    "prettier": "3.6.2",
-    "typescript-eslint": "8.19.1"
+"devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "catalog:",
+    "@eslint/js": "catalog:",
+    "@typescript-eslint/eslint-plugin": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "conventional-changelog": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-prettier": "catalog:",
+    "globals": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "typescript-eslint": "catalog:"
   },
   "lint-staged": {
     "*.{js,ts,mjs,mts}": [
