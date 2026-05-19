@@ -19,12 +19,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron-app-bundler": "../../",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
-    "electron": "35.1.3",
-    "esbuild": "0.25.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "electron-app-bundler": "workspace:*",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "electron": "catalog:",
+    "esbuild": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   }
 }
