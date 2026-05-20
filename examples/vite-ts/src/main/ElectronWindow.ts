@@ -8,7 +8,7 @@ export class ElectronWindow extends BrowserWindow {
     super({
       width: 800,
       height: 600,
-      show: false,
+      show: false
     });
     this.url = 'http://localhost:8080';
     if (process.env.NODE_ENV === 'production') {
