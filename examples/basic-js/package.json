@@ -1,5 +1,5 @@
 {
-  "name": "basic-example-js",
+  "name": "basic-js",
   "version": "1.0.0",
   "description": "Basic example of using electron-app-bundler",
   "main": "./dist/main/main.js",
