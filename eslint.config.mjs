@@ -5,7 +5,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['**/node_modules', '**/dist', '**/astro'] },
+  { ignores: ['**/node_modules', '**/dist', '**/.astro'] },
   { files: ['**/*.{js,mjs,cjs,ts,vue}'] },
   { languageOptions: { globals: { ...globals.node } } },
   eslint.configs.recommended,

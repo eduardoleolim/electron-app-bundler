@@ -1,5 +1,5 @@
 {
-  "name": "svelte-example-ts",
+  "name": "svelte-ts",
   "version": "1.0.0",
   "type": "module",
   "description": "Basic example of using electron-app-bundler with TypeScript and Svelte",
