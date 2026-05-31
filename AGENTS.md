@@ -4,11 +4,11 @@
 
 ## Commands
 ```bash
-npm run build   # rimraf dist && tsc
-npm run lint    # eslint --quiet --fix
-npm run test    # jest
+pnpm bundler:build   # rimraf dist && tsc (app package)
+pnpm lint            # eslint --quiet --fix
+pnpm bundler:test    # jest (app package)
 ```
-**Example apps** use isolated npm runs: `npm run basic-ts:install`, `npm run basic-ts:dev`, `npm run basic-ts:build`, etc.
+**Example apps** use pnpm workspace (`workspace:*` protocol). Install all deps at root (`pnpm install`), then run with e.g. `pnpm basic-ts:dev`, `pnpm basic-ts:build`.
 
 ## Key Quirks
 - **ESM-only** (`"type": "module"`). Source files use `.mts` extension (compiled to `.mjs`).
@@ -38,11 +38,11 @@ tests/
 ```
 
 ## Build Pipeline
-1. `npm run lint` (or pre-commit hook)
-2. `npm run build` compiles `src/` -> `dist/` with `tsconfig.json`
-3. `npm run test` runs tests via `ts-jest` with `tsconfig.test.json`
+1. `pnpm lint` (or pre-commit hook)
+2. `pnpm bundler:build` compiles `src/` -> `dist/` with `tsconfig.json`
+3. `pnpm bundler:test` runs tests via `ts-jest` with `tsconfig.test.json`
 
 ## Misc
-- Requires Node.js >=20
+- Requires Node.js >=22.19.0, pnpm >=11.0.0
 - Module resolution: `Node16`
 - No separate typecheck command (tsc is part of `build`)
