@@ -86,10 +86,5 @@
     "astro": {
       "optional": true
     }
-  },
-  "lint-staged": {
-    "*.{js,ts,mjs,mts}": [
-      "eslint --fix"
-    ]
   }
 }
