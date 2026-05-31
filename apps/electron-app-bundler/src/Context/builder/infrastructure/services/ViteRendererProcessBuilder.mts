@@ -52,7 +52,7 @@ export class ViteRendererProcessBuilder implements RendererProcessBuilderService
           this.logger.error('RENDERER-BUILDER', `An error occurred while building the renderer process.\n${error}`);
         }
       } finally {
-        this.logger.info('RENDERER-BUILDER', 'Watching for changes');
+        this.logger.log('RENDERER-BUILDER', 'Watching for changes');
       }
 
       watcher.on(

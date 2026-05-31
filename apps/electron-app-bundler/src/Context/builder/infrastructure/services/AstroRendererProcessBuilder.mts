@@ -44,7 +44,7 @@ export class AstroRendererProcessBuilder implements RendererProcessBuilderServic
       watcher.add(preloadDependencies);
 
       this.logger.info('RENDERER-BUILDER', `Renderer process running on http://localhost:${server.address.port}`);
-      this.logger.info('RENDERER-BUILDER', 'Watching for changes');
+      this.logger.log('RENDERER-BUILDER', 'Watching for changes');
 
       watcher.on(
         'change',

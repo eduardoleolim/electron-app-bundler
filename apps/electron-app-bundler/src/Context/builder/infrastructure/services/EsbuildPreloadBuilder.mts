@@ -47,7 +47,7 @@ export class EsbuildPreloadBuilder implements PreloadBuilderService {
         try {
           this.logger.log('PRELOAD-BUILDER', 'Building preload electron process');
           await context.rebuild();
-          this.logger.info('PRELOAD-BUILDER', 'Preload process built');
+          this.logger.log('PRELOAD-BUILDER', 'Preload process built');
         } catch (error: unknown) {
           if (error instanceof Error) {
             this.logger.error('PRELOAD-BUILDER', error.message);
@@ -55,7 +55,7 @@ export class EsbuildPreloadBuilder implements PreloadBuilderService {
             this.logger.error('PRELOAD-BUILDER', `An error occurred while building the preload script.\n${error}`);
           }
         } finally {
-          this.logger.info('PRELOAD-BUILDER', 'Watching for changes');
+          this.logger.log('PRELOAD-BUILDER', 'Watching for changes');
         }
       })
       .on(
@@ -64,7 +64,7 @@ export class EsbuildPreloadBuilder implements PreloadBuilderService {
           try {
             await context.cancel();
             await context.rebuild();
-            this.logger.info('PRELOAD-BUILDER', 'Preload process rebuilt');
+            this.logger.log('PRELOAD-BUILDER', 'Preload process rebuilt');
 
             watcher.unwatch(dependencies);
             dependencies = getDependencies(config.entryPoint);

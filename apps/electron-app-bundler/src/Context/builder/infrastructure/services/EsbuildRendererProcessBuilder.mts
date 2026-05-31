@@ -62,7 +62,7 @@ export class EsbuildRendererProcessBuilder implements RendererProcessBuilderServ
 
     try {
       await context.rebuild();
-      this.logger.info('RENDERER-BUILDER', 'Renderer process built');
+      this.logger.log('RENDERER-BUILDER', 'Renderer process built');
     } catch (error: unknown) {
       if (error instanceof Error) {
         this.logger.error('RENDERER-BUILDER', error.message);
@@ -70,7 +70,7 @@ export class EsbuildRendererProcessBuilder implements RendererProcessBuilderServ
         this.logger.error('RENDERER-BUILDER', `An error occurred while building the renderer process.\n${error}`);
       }
     } finally {
-      this.logger.info('RENDERER-BUILDER', 'Watching for changes');
+      this.logger.log('RENDERER-BUILDER', 'Watching for changes');
     }
 
     await context.serve(serveOptions);
