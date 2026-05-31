@@ -1,6 +1,6 @@
-import { ConfigParser, RendererBuilderType } from '../../../src/Context/config/domain/ConfigParser.mjs';
-import type { ConfigReader } from '../../../src/Context/config/domain/ConfigReader.mjs';
-import { InMemoryConfigReader } from '../../../tests/Context/config/InMemoryConfigReader';
+import { ConfigParser, RendererBuilderType } from '../../../src/context/config/domain/ConfigParser.mjs';
+import type { ConfigReader } from '../../../src/context/config/domain/ConfigReader.mjs';
+import { InMemoryConfigReader } from '../../../tests/context/config/InMemoryConfigReader';
 
 describe('BuilderApplication Integration', () => {
   let parser: ConfigParser;

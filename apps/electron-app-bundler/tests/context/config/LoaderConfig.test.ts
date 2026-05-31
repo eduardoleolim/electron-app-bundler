@@ -1,4 +1,4 @@
-import { ConfigParser } from '../../../src/Context/config/domain/ConfigParser.mjs';
+import { ConfigParser } from '../../../src/context/config/domain/ConfigParser.mjs';
 
 describe('LoaderConfig module', () => {
   const configParser = new ConfigParser();

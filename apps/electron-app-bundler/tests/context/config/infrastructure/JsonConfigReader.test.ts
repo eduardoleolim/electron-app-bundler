@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import os from 'os';
 import * as path from 'path';
 
-import { JsonConfigReader } from '../../../../src/Context/config/infrastructure/JsonConfigReader.mjs';
+import { JsonConfigReader } from '../../../../src/context/config/infrastructure/JsonConfigReader.mjs';
 
 describe('JsonConfigReader', () => {
   let tempDir: string;

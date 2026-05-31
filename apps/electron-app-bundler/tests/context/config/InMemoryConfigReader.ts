@@ -1,4 +1,4 @@
-import { ConfigReader } from '../../../src/Context/config/domain/ConfigReader.mjs';
+import { ConfigReader } from '../../../src/context/config/domain/ConfigReader.mjs';
 
 export class InMemoryConfigReader extends ConfigReader {
   private config: unknown;

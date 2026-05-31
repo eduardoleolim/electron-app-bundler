@@ -1,5 +1,5 @@
-import { ConfigParser, RendererBuilderType } from '../../../src/Context/config/domain/ConfigParser.mjs';
-import { OutputConfig } from '../../../src/Context/config/domain/OutputConfig.mjs';
+import { ConfigParser, RendererBuilderType } from '../../../src/context/config/domain/ConfigParser.mjs';
+import { OutputConfig } from '../../../src/context/config/domain/OutputConfig.mjs';
 import { InMemoryConfigReader } from './InMemoryConfigReader';
 
 describe('ConfigParser', () => {

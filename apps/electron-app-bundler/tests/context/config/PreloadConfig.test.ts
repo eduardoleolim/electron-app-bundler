@@ -1,5 +1,5 @@
-import { ConfigParser } from '../../../src/Context/config/domain/ConfigParser.mjs';
-import { OutputConfig } from '../../../src/Context/config/domain/OutputConfig.mjs';
+import { ConfigParser } from '../../../src/context/config/domain/ConfigParser.mjs';
+import { OutputConfig } from '../../../src/context/config/domain/OutputConfig.mjs';
 
 describe('PreloadConfig', () => {
   let parser: ConfigParser;

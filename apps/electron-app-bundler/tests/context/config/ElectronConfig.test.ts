@@ -1,4 +1,4 @@
-import { ConfigParser, RendererBuilderType } from '../../../src/Context/config/domain/ConfigParser.mjs';
+import { ConfigParser, RendererBuilderType } from '../../../src/context/config/domain/ConfigParser.mjs';
 
 describe('ElectronConfig', () => {
   let parser: ConfigParser;

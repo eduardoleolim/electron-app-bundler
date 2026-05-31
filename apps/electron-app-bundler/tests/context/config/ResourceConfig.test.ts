@@ -1,6 +1,6 @@
-import { ConfigParser } from '../../../src/Context/config/domain/ConfigParser.mjs';
-import { OutputConfig } from '../../../src/Context/config/domain/OutputConfig.mjs';
-import { CustomResourceConfig, SimpleResourceConfig } from '../../../src/Context/config/domain/ResourceConfig.mjs';
+import { ConfigParser } from '../../../src/context/config/domain/ConfigParser.mjs';
+import { OutputConfig } from '../../../src/context/config/domain/OutputConfig.mjs';
+import { CustomResourceConfig, SimpleResourceConfig } from '../../../src/context/config/domain/ResourceConfig.mjs';
 import {
   invalidFromResourcesConfigData,
   invalidToResourcesConfigData,

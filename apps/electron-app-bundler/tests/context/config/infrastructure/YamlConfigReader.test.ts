@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import os from 'os';
 import * as path from 'path';
 
-import { YamlConfigReader } from '../../../../src/Context/config/infrastructure/YamlConfigReader.mjs';
+import { YamlConfigReader } from '../../../../src/context/config/infrastructure/YamlConfigReader.mjs';
 
 describe('YamlConfigReader', () => {
   let tempDir: string;
