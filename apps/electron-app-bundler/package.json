@@ -47,6 +47,28 @@
     "js-yaml": "catalog:",
     "livereload": "catalog:"
   },
+  "devDependencies": {
+    "@types/compression": "catalog:",
+    "@types/connect": "catalog:",
+    "@types/debounce": "catalog:",
+    "@types/http-proxy": "catalog:",
+    "@types/jest": "catalog:",
+    "@types/js-yaml": "catalog:",
+    "@types/livereload": "catalog:",
+    "@types/node": "catalog:",
+    "astro": "catalog:",
+    "clean-pkg-json": "catalog:",
+    "conventional-changelog": "catalog:",
+    "esbuild": "catalog:",
+    "jest": "catalog:",
+    "jest-ctrf-json-reporter": "catalog:",
+    "prettier": "catalog:",
+    "rimraf": "catalog:",
+    "ts-jest": "catalog:",
+    "ts-node": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  },
   "peerDependencies": {
     "astro": "catalog:",
     "esbuild": "catalog:",
