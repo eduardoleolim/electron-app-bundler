@@ -21,27 +21,31 @@ jobs:
 
     steps:
       - name: 👍 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
-      - name: ❇️ Setup Node.js
+      - name: ⚡ Setup pnpm
+        uses: pnpm/action-setup@v5
+
+      - name: ❇️ Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: lts/iron
-          cache: npm
+          node-version: jod/iron
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
 
       - name: ⬇️ Install Dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: 🛠️ Build
-        run: npm run build
+        run: pnpm bundler:build
 
       - name: 🧑‍🔬 Execute Tests
-        run: npm test
+        run: npm bundler:test
 
       - name: 📊 Publish Test Report
         uses: ctrf-io/github-test-reporter@v1
         with:
-          report-path: './ctrf/*.json'
+          report-path: './apps/electron-app-bundler/ctrf/*.json'
         if: always()
 
   release:
@@ -52,7 +56,7 @@ jobs:
 
     steps:
       - name: 👍 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -60,24 +64,21 @@ jobs:
         uses: justincy/github-action-npm-release@2.0.2
         id: release
 
-      - name: ❇️ Setup node.js
+      - name: ❇️ Setup Node
         if: steps.release.outputs.released == 'true'
         uses: actions/setup-node@v6
         with:
-          node-version: lts/iron
-          cache: 'npm'
+          node-version: jod/iron
+          cache: pnpm
+          cache-dependency-path: ./pnpm-lock.yaml
 
       - name: 📥 Install Dependencies
         if: steps.release.outputs.released == 'true'
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: 🛠️ Build
         if: steps.release.outputs.released == 'true'
-        run: npm run build
-
-      - name: 🗑️ Clean 'package.json'
-        if: steps.release.outputs.released == 'true'
-        run: npm run clean:package
+        run: pnpm bundler:build
 
       - name: 🚀 Publish to npm
         uses: JS-DevTools/npm-publish@v3
