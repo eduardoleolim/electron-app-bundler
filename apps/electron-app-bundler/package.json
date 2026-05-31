@@ -4,14 +4,9 @@
   "description": "Use esbuild with electron",
   "type": "module",
   "main": "dist/app/index.mjs",
-  "scripts": {
-    "clean:package": "clean-pkg-json",
-    "build": "rimraf dist && tsc",
-    "test": "jest",
-    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
-  },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.19.0",
+    "pnpm": ">=11.0.0"
   },
   "bin": {
     "electron-app-bundler": "dist/app/index.mjs"
@@ -51,28 +46,6 @@
     "http-proxy": "catalog:",
     "js-yaml": "catalog:",
     "livereload": "catalog:"
-  },
-  "devDependencies": {
-    "@types/compression": "catalog:",
-    "@types/connect": "catalog:",
-    "@types/debounce": "catalog:",
-    "@types/http-proxy": "catalog:",
-    "@types/jest": "catalog:",
-    "@types/js-yaml": "catalog:",
-    "@types/livereload": "catalog:",
-    "@types/node": "catalog:",
-    "astro": "catalog:",
-    "clean-pkg-json": "catalog:",
-    "conventional-changelog": "catalog:",
-    "esbuild": "catalog:",
-    "jest": "catalog:",
-    "jest-ctrf-json-reporter": "catalog:",
-    "prettier": "catalog:",
-    "rimraf": "catalog:",
-    "ts-jest": "catalog:",
-    "ts-node": "catalog:",
-    "typescript": "catalog:",
-    "vite": "catalog:"
   },
   "peerDependencies": {
     "astro": "catalog:",
