@@ -64,6 +64,8 @@ jobs:
       - name: 🚀 Release in repository
         uses: justincy/github-action-npm-release@2.0.2
         id: release
+        with:
+          path: ${{ github.workspace }}/apps/electron-app-bundler
 
       - name: ❇️ Setup Node
         if: steps.release.outputs.released == 'true'
