@@ -41,7 +41,7 @@ jobs:
         run: pnpm bundler:build
 
       - name: 🧑‍🔬 Execute Tests
-        run: npm bundler:test
+        run: pnpm bundler:test
 
       - name: 📊 Publish Test Report
         uses: ctrf-io/github-test-reporter@v1
