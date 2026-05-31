@@ -4,6 +4,12 @@
   "description": "Use esbuild with electron",
   "type": "module",
   "main": "dist/app/index.mjs",
+  "scripts": {
+    "clean:package": "clean-pkg-json",
+    "build": "rimraf dist && tsc",
+    "test": "jest",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0"
+  },
   "engines": {
     "node": ">=22.19.0",
     "pnpm": ">=11.0.0"
